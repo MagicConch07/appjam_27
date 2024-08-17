@@ -3,9 +3,9 @@ using UnityEngine;
 public class Fruit : MonoBehaviour, IBarObject
 {
     [SerializeField] private FruitSO _fruit;
-    [SerializeField] private LayerMask _layer;
+    [SerializeField] protected LayerMask _layer;
 
-    public void DeselectObject()
+    public virtual void DeselectObject()
     {
         RaycastHit2D[] hits = new RaycastHit2D[1];
 
@@ -26,15 +26,16 @@ public class Fruit : MonoBehaviour, IBarObject
         return gameObject;
     }
 
-    public void CheckCollider(Collider2D col)
+    public virtual void CheckCollider(Collider2D col)
     {
         if (col.CompareTag("Knife"))
         {
-            Debug.Log("절단");
+            if (_fruit.sliceObj == null) return;
+
+            Instantiate(_fruit.sliceObj, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
         }
-        else if (col.CompareTag("Juicer"))
-        {
-            Debug.Log("착즙");
-        }
+
+        Destroy(this.gameObject);
     }
 }

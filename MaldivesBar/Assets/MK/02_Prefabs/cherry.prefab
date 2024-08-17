@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3972529908780006302}
   - component: {fileID: 8790484599317738814}
-  - component: {fileID: 6699501750318876705}
   - component: {fileID: 7921687590924321489}
-  m_Layer: 0
+  - component: {fileID: -6094507634975152718}
+  m_Layer: 30
   m_Name: cherry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,22 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6699501750318876705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440506333529341885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea475acbf60a6c48aaca35fefb9bb87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fruit: {fileID: 11400000, guid: 4cf6e15984f87be46b83db923dbf6e59, type: 2}
-  _layer:
-    serializedVersion: 2
-    m_Bits: 2147483648
 --- !u!58 &7921687590924321489
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,3 +121,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.65
+--- !u!114 &-6094507634975152718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440506333529341885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1cc66840bd22c46a0c69cbceab2089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fruit: {fileID: 0}
+  _layer:
+    serializedVersion: 2
+    m_Bits: 2147483648
+  _bottlePrefab: {fileID: 3584966733459964591, guid: ff2c037c79f382b40a4f060aae237fe7, type: 3}
+  _color: {r: 1, g: 0, b: 0.39215687, a: 1}

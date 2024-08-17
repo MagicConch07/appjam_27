@@ -19,14 +19,16 @@ public class Player : MonoBehaviour
 
     private void HandleClick(bool isClick)
     {
-        _isClicking = isClick;
 
-        if (isClick == false)
+        if (isClick == false && _selectObject != null)
         {
             var obj = _selectObject.GetComponent<IBarObject>();
             obj.DeselectObject();
             _selectObject = null;
         }
+
+        _isClicking = isClick;
+
     }
 
     private void Update()
