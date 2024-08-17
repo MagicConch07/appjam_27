@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -25,6 +20,13 @@ public class Player : MonoBehaviour
     private void HandleClick(bool isClick)
     {
         _isClicking = isClick;
+
+        if (isClick == false)
+        {
+            var obj = _selectObject.GetComponent<IBarObject>();
+            obj.DeselectObject();
+            _selectObject = null;
+        }
     }
 
     private void Update()
@@ -35,14 +37,16 @@ public class Player : MonoBehaviour
 
     private void SelectObj()
     {
-        if (_isClicking == false) return;
+        if (_isClicking == false || _selectObject != null) return;
+
         RaycastHit2D[] hits = new RaycastHit2D[1];
 
         int hit = Physics2D.RaycastNonAlloc(GetMousePosition(), Vector3.forward, hits, Mathf.Infinity, _objLayer);
 
         if (hit >= 1)
         {
-            _selectObject = hits[0].collider.gameObject;
+            IBarObject barObj = hits[0].collider.GetComponent<IBarObject>();
+            _selectObject = barObj.GetObject();
         }
     }
 
