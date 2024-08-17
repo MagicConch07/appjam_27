@@ -14,7 +14,7 @@ public class TextTyper : MonoBehaviour
     public float typingSpeed = 0.1f;  // 각 문자 사이의 시간 간격
 
     private string currentText = "";  // 현재 출력 중인 텍스트
-    public String[] comment = {"거 죽기 딱 좋은 날씨오.", "이런 날에는 술이 딱이군요.", "오늘은 나를 위한 날 이구나.", "첫잔은 원샷!", "주인장? 늘 먹던걸로."};
+    public String[] comment = {"거 죽기 딱 좋은 날씨오.", "이런 날에는 술이 딱이군요.", "오늘은 나를 위한 날 이구나.", "첫잔은 원샷!", "주인장? 늘 먹던걸로.", "오늘은 기분이 좋으니,", "장사는 잘 되나?"};
     public String[] AlcoholKind1 = {"블랙 러시안", "준벅", "홀리갓", "킹헤븐", "갓소오", "코코맘", "호라이즌", "실버스피릿", "King Nara", "오스틴콰이엇", "고려파갈로", "열고스피릿", "레드와인", "화이트와인", "포도와인", "소주", "막걸리", "위스키", "데킬라", "보드카"}; // 술 종류
 
     // Start is called before the first frame update
