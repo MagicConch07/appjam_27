@@ -20,9 +20,10 @@ public class MenuBtn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    public void SceneChanger() {
-        SceneManager.LoadScene("KitchenScene");
+    public void SceneChanger()
+    {
+        SceneManager.LoadScene(2);
     }
 }

@@ -40,7 +40,7 @@ namespace MKDir
                 GameObject obj = new GameObject();
                 obj.name = typeof(T).Name;
                 _instance = obj.AddComponent<T>();
-                DontDestroyOnLoad(obj);
+                //DontDestroyOnLoad(obj);
             }
         }
 
@@ -49,7 +49,7 @@ namespace MKDir
             if (_instance == null)
             {
                 _instance = this as T;
-                DontDestroyOnLoad(this.gameObject);
+                //DontDestroyOnLoad(this.gameObject);
             }
             else
             {
