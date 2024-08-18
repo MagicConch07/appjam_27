@@ -31,7 +31,6 @@ public class Fruit : MonoBehaviour, IBarObject
         if (col.CompareTag("Knife"))
         {
             if (_fruit.sliceObj == null) return;
-
             Instantiate(_fruit.sliceObj, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }

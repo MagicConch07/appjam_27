@@ -6,7 +6,7 @@ public class FruitBowl : MonoBehaviour, IBarObject
 
     public void DeselectObject()
     {
-        throw new System.NotImplementedException();
+        return;
     }
 
     public GameObject GetObject()

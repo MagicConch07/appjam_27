@@ -8,6 +8,7 @@ public class Alcohol : MonoBehaviour, IBarObject
     [SerializeField] private LayerMask _layer;
 
     [SerializeField] private Color _color;
+    [SerializeField] private int _index;
 
     public void DeselectObject()
     {
@@ -18,7 +19,7 @@ public class Alcohol : MonoBehaviour, IBarObject
         if (hit >= 1)
         {
             var obj = hits[0].collider.gameObject.GetComponent<Cup>();
-            obj.FillCup(_color);
+            obj.FillCup(_color, _index);
         }
 
         transform.position = _origin.position;

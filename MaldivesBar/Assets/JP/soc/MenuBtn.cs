@@ -24,6 +24,6 @@ public class MenuBtn : MonoBehaviour
     }
     public void SceneChanger()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

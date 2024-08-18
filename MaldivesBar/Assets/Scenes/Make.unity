@@ -972,6 +972,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 536870912
   _color: {r: 0.85660374, g: 0.51622057, b: 0, a: 1}
+  _index: 5
 --- !u!1 &183954943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,6 +1376,7 @@ MonoBehaviour:
   - {fileID: 540474395}
   - {fileID: 593013383}
   - {fileID: 1769957907}
+  indexs: 00000000000000000000000000000000
 --- !u!1 &224576075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,7 +2442,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.95032203, g: 1, b: 0.3150943, a: 1}
   m_FlipX: 0
@@ -2576,7 +2578,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 0.31372547, b: 0.32183024, a: 1}
   m_FlipX: 0
@@ -6641,6 +6643,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 536870912
   _color: {r: 0, g: 0.5294118, b: 0, a: 1}
+  _index: 3
 --- !u!1 &961232868
 GameObject:
   m_ObjectHideFlags: 0
@@ -6866,7 +6869,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7350,6 +7353,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 536870912
   _color: {r: 1, g: 1, b: 1, a: 1}
+  _index: 4
 --- !u!1 &1381080790
 GameObject:
   m_ObjectHideFlags: 0
@@ -8707,7 +8711,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.3498292, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -8867,6 +8871,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 536870912
   _color: {r: 0.4264151, g: 0, b: 0, a: 1}
+  _index: 6
 --- !u!1 &1834588038
 GameObject:
   m_ObjectHideFlags: 0

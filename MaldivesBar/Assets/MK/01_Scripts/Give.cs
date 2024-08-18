@@ -11,6 +11,6 @@ public class Give : MonoBehaviour
     {
         if (_shake.IsRight == false) return;
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

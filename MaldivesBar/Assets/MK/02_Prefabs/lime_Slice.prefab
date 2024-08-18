@@ -139,3 +139,4 @@ MonoBehaviour:
     m_Bits: 2147483648
   _bottlePrefab: {fileID: 3584966733459964591, guid: ff2c037c79f382b40a4f060aae237fe7, type: 3}
   _color: {r: 0.6022411, g: 1, b: 0.1566037, a: 1}
+  _index: 1
